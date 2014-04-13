@@ -3,7 +3,7 @@
 var AutoComplete = React.createClass({
   render: function() {
     return (
-      <p>{this.props.name}</p>     
+      <p>{this.props.name}</p>
     );
   }
 });
@@ -31,7 +31,7 @@ var WikiBox = React.createClass({
            if (current == this.state.call.latest) {
               var newPriority = this.state.call.latest - 1;
               this.setState({autocomplete: immutable.array(data[1]), call: {latest: newPriority, term:''} });
-           } 
+           }
         }.bind(this)
     );
   },
@@ -49,13 +49,13 @@ var WikiBox = React.createClass({
   render: function() {
     if (this.state.call.latest > 0 && this.state.call.term != '') {
       this.makeCall(this.state.call.term, this.state.call.latest);
-    } 
+    }
     return (
       <div className="wikibox">
         <span>Give it a try:</span>
         <input type="text" placeholder="search" onKeyUp={this.handleKeyUp} />
         <AutoCompleteBox list={this.state.autocomplete} />
-      </div>  
+      </div>
     );
   }
 });

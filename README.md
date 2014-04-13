@@ -1,11 +1,16 @@
-a simple demo using reactJS with persistent data structures.
+A simple demo using reactJS with persistent data structures. 
 
-how to run demo server:
+* http://tech.kinja.com/immutable-react-1495205675
+* https://github.com/hughfdjackson/immutable
+
+Run demo server:
+
 ```
-npm install express
-node server.js
+python -m SimpleHTTPServer
 ```
+
 then visit:
+
 ```
-http://localhost:3000
+http://localhost:8000
 ```
